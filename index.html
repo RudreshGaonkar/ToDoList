@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/mobile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputSec">
+            <p class="heading">ToDo List</p>
+            <input type="text" placeholder="Add Task" class="input-css js-input" onclick="
+                if(event.key === 'Enter')
+                {
+                    addTask();
+                }
+            ">
+            <p class="in-mid-sec">
+                <input type="date" placeholder="Select date" class="inputdatetime-css js-date" onclick="
+                if(event.key === 'Enter')
+                {
+                    addTask();
+                }
+            ">
+                <input type="time" placeholder="Select time" class="inputdatetime-css js-time" onclick="
+                if(event.key === 'Enter')
+                {
+                    addTask();
+                }
+            ">
+            </p>
+            <p class="buttonBox">
+                <button class="add-btn" onclick="addTask();">Add</button>
+            </p>
+        </div>
+
+        <div class="displaysec">
+            <p class="heading">Your Tasks</p>
+            <p>__________________________</p>
+            <div class="js-listTask ">
+
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
